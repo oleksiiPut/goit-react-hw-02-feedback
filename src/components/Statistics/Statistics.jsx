@@ -1,12 +1,9 @@
 import React from 'react';
-import Notification from '../Notification/Notification';
 import { Ul, Li, Span } from '../FeedbackWidget.styled';
 import PropTypes from 'prop-types';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
-  return total === 0 ? (
-    <Notification message="There is no feedback" />
-  ) : (
+  return (
     <Ul>
       <Li>
         Good <Span>{good}</Span>
